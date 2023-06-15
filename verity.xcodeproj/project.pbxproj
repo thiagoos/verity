@@ -9,25 +9,83 @@
 /* Begin PBXBuildFile section */
 		BCFCD6A02A3BA34100F921B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD69F2A3BA34100F921B3 /* AppDelegate.swift */; };
 		BCFCD6A22A3BA34100F921B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6A12A3BA34100F921B3 /* SceneDelegate.swift */; };
-		BCFCD6A42A3BA34100F921B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6A32A3BA34100F921B3 /* ViewController.swift */; };
-		BCFCD6A72A3BA34100F921B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFCD6A52A3BA34100F921B3 /* Main.storyboard */; };
 		BCFCD6A92A3BA34900F921B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFCD6A82A3BA34900F921B3 /* Assets.xcassets */; };
 		BCFCD6AC2A3BA34900F921B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFCD6AA2A3BA34900F921B3 /* LaunchScreen.storyboard */; };
+		BCFCD6BA2A3BA44500F921B3 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6B82A3BA44400F921B3 /* UserDetailViewController.swift */; };
+		BCFCD6BB2A3BA44500F921B3 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6B92A3BA44500F921B3 /* UserDetailViewModel.swift */; };
+		BCFCD6C02A3BA45F00F921B3 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6BD2A3BA45F00F921B3 /* RepoTableViewCell.swift */; };
+		BCFCD6C12A3BA45F00F921B3 /* UserDetailCardInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6BE2A3BA45F00F921B3 /* UserDetailCardInformation.swift */; };
+		BCFCD6C22A3BA45F00F921B3 /* UserDetailHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6BF2A3BA45F00F921B3 /* UserDetailHeader.swift */; };
+		BCFCD6C62A3BA47300F921B3 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6C42A3BA47200F921B3 /* UsersViewModel.swift */; };
+		BCFCD6C72A3BA47300F921B3 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6C52A3BA47300F921B3 /* UsersViewController.swift */; };
+		BCFCD6CA2A3BA48000F921B3 /* UsersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6C92A3BA48000F921B3 /* UsersCollectionViewCell.swift */; };
+		BCFCD6D02A3BA49900F921B3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6CC2A3BA49800F921B3 /* BaseViewController.swift */; };
+		BCFCD6D12A3BA49900F921B3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6CD2A3BA49800F921B3 /* Extension.swift */; };
+		BCFCD6D22A3BA49900F921B3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6CE2A3BA49800F921B3 /* LoadingView.swift */; };
+		BCFCD6D32A3BA49900F921B3 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6CF2A3BA49900F921B3 /* ErrorView.swift */; };
+		BCFCD6D72A3BA4AF00F921B3 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6D52A3BA4AF00F921B3 /* Repo.swift */; };
+		BCFCD6D82A3BA4AF00F921B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6D62A3BA4AF00F921B3 /* User.swift */; };
+		BCFCD6DF2A3BA4C200F921B3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6DA2A3BA4C000F921B3 /* API.swift */; };
+		BCFCD6E02A3BA4C200F921B3 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6DB2A3BA4C000F921B3 /* APIError.swift */; };
+		BCFCD6E12A3BA4C200F921B3 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6DC2A3BA4C100F921B3 /* APIProtocol.swift */; };
+		BCFCD6E22A3BA4C200F921B3 /* APIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6DD2A3BA4C200F921B3 /* APIMock.swift */; };
+		BCFCD6E32A3BA4C200F921B3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6DE2A3BA4C200F921B3 /* Service.swift */; };
+		BCFCD6EB2A3BA6F600F921B3 /* verityAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6EA2A3BA6F600F921B3 /* verityAPITests.swift */; };
+		BCFCD6F22A3BA76900F921B3 /* verityUserDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6F12A3BA76900F921B3 /* verityUserDetailViewModelTests.swift */; };
+		BCFCD6F42A3BA79600F921B3 /* verityUsersModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFCD6F32A3BA79600F921B3 /* verityUsersModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCFCD6EC2A3BA6F600F921B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCFCD6942A3BA34000F921B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCFCD69B2A3BA34000F921B3;
+			remoteInfo = verity;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BCFCD69C2A3BA34100F921B3 /* verity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = verity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFCD69F2A3BA34100F921B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCFCD6A12A3BA34100F921B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCFCD6A32A3BA34100F921B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BCFCD6A62A3BA34100F921B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCFCD6A82A3BA34900F921B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCFCD6AB2A3BA34900F921B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCFCD6AD2A3BA34900F921B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFCD6B82A3BA44400F921B3 /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		BCFCD6B92A3BA44500F921B3 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		BCFCD6BD2A3BA45F00F921B3 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		BCFCD6BE2A3BA45F00F921B3 /* UserDetailCardInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailCardInformation.swift; sourceTree = "<group>"; };
+		BCFCD6BF2A3BA45F00F921B3 /* UserDetailHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailHeader.swift; sourceTree = "<group>"; };
+		BCFCD6C42A3BA47200F921B3 /* UsersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		BCFCD6C52A3BA47300F921B3 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		BCFCD6C92A3BA48000F921B3 /* UsersCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersCollectionViewCell.swift; sourceTree = "<group>"; };
+		BCFCD6CC2A3BA49800F921B3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BCFCD6CD2A3BA49800F921B3 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		BCFCD6CE2A3BA49800F921B3 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		BCFCD6CF2A3BA49900F921B3 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		BCFCD6D52A3BA4AF00F921B3 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		BCFCD6D62A3BA4AF00F921B3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BCFCD6DA2A3BA4C000F921B3 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BCFCD6DB2A3BA4C000F921B3 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		BCFCD6DC2A3BA4C100F921B3 /* APIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		BCFCD6DD2A3BA4C200F921B3 /* APIMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMock.swift; sourceTree = "<group>"; };
+		BCFCD6DE2A3BA4C200F921B3 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		BCFCD6E82A3BA6F600F921B3 /* verityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = verityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFCD6EA2A3BA6F600F921B3 /* verityAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verityAPITests.swift; sourceTree = "<group>"; };
+		BCFCD6F12A3BA76900F921B3 /* verityUserDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verityUserDetailViewModelTests.swift; sourceTree = "<group>"; };
+		BCFCD6F32A3BA79600F921B3 /* verityUsersModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verityUsersModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BCFCD6992A3BA34000F921B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFCD6E52A3BA6F600F921B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				BCFCD69E2A3BA34100F921B3 /* verity */,
+				BCFCD6E92A3BA6F600F921B3 /* verityTests */,
 				BCFCD69D2A3BA34100F921B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				BCFCD69C2A3BA34100F921B3 /* verity.app */,
+				BCFCD6E82A3BA6F600F921B3 /* verityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +116,130 @@
 		BCFCD69E2A3BA34100F921B3 /* verity */ = {
 			isa = PBXGroup;
 			children = (
-				BCFCD69F2A3BA34100F921B3 /* AppDelegate.swift */,
-				BCFCD6A12A3BA34100F921B3 /* SceneDelegate.swift */,
-				BCFCD6A32A3BA34100F921B3 /* ViewController.swift */,
-				BCFCD6A52A3BA34100F921B3 /* Main.storyboard */,
-				BCFCD6A82A3BA34900F921B3 /* Assets.xcassets */,
-				BCFCD6AA2A3BA34900F921B3 /* LaunchScreen.storyboard */,
+				BCFCD6B32A3BA37500F921B3 /* Application */,
+				BCFCD6B52A3BA39E00F921B3 /* Resource */,
+				BCFCD6B42A3BA39100F921B3 /* Source */,
 				BCFCD6AD2A3BA34900F921B3 /* Info.plist */,
 			);
 			path = verity;
+			sourceTree = "<group>";
+		};
+		BCFCD6B32A3BA37500F921B3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCD6A12A3BA34100F921B3 /* SceneDelegate.swift */,
+				BCFCD6AA2A3BA34900F921B3 /* LaunchScreen.storyboard */,
+				BCFCD69F2A3BA34100F921B3 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BCFCD6B42A3BA39100F921B3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCD6D92A3BA4B500F921B3 /* Service */,
+				BCFCD6D42A3BA4A400F921B3 /* Model */,
+				BCFCD6CB2A3BA48D00F921B3 /* Helper */,
+				BCFCD6B62A3BA42800F921B3 /* User */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BCFCD6B52A3BA39E00F921B3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCD6A82A3BA34900F921B3 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BCFCD6B62A3BA42800F921B3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCD6C32A3BA46500F921B3 /* List */,
+				BCFCD6B72A3BA43100F921B3 /* Detail */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		BCFCD6B72A3BA43100F921B3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCD6BC2A3BA45100F921B3 /* Custom */,
+				BCFCD6B82A3BA44400F921B3 /* UserDetailViewController.swift */,
+				BCFCD6B92A3BA44500F921B3 /* UserDetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		BCFCD6BC2A3BA45100F921B3 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCD6BD2A3BA45F00F921B3 /* RepoTableViewCell.swift */,
+				BCFCD6BE2A3BA45F00F921B3 /* UserDetailCardInformation.swift */,
+				BCFCD6BF2A3BA45F00F921B3 /* UserDetailHeader.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		BCFCD6C32A3BA46500F921B3 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCD6C82A3BA47600F921B3 /* Custom */,
+				BCFCD6C52A3BA47300F921B3 /* UsersViewController.swift */,
+				BCFCD6C42A3BA47200F921B3 /* UsersViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		BCFCD6C82A3BA47600F921B3 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCD6C92A3BA48000F921B3 /* UsersCollectionViewCell.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		BCFCD6CB2A3BA48D00F921B3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCD6CC2A3BA49800F921B3 /* BaseViewController.swift */,
+				BCFCD6CF2A3BA49900F921B3 /* ErrorView.swift */,
+				BCFCD6CD2A3BA49800F921B3 /* Extension.swift */,
+				BCFCD6CE2A3BA49800F921B3 /* LoadingView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		BCFCD6D42A3BA4A400F921B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCD6D52A3BA4AF00F921B3 /* Repo.swift */,
+				BCFCD6D62A3BA4AF00F921B3 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCFCD6D92A3BA4B500F921B3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCD6DA2A3BA4C000F921B3 /* API.swift */,
+				BCFCD6DB2A3BA4C000F921B3 /* APIError.swift */,
+				BCFCD6DD2A3BA4C200F921B3 /* APIMock.swift */,
+				BCFCD6DC2A3BA4C100F921B3 /* APIProtocol.swift */,
+				BCFCD6DE2A3BA4C200F921B3 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BCFCD6E92A3BA6F600F921B3 /* verityTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCD6EA2A3BA6F600F921B3 /* verityAPITests.swift */,
+				BCFCD6F12A3BA76900F921B3 /* verityUserDetailViewModelTests.swift */,
+				BCFCD6F32A3BA79600F921B3 /* verityUsersModelTests.swift */,
+			);
+			path = verityTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +262,24 @@
 			productReference = BCFCD69C2A3BA34100F921B3 /* verity.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BCFCD6E72A3BA6F600F921B3 /* verityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCFCD6EE2A3BA6F600F921B3 /* Build configuration list for PBXNativeTarget "verityTests" */;
+			buildPhases = (
+				BCFCD6E42A3BA6F600F921B3 /* Sources */,
+				BCFCD6E52A3BA6F600F921B3 /* Frameworks */,
+				BCFCD6E62A3BA6F600F921B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCFCD6ED2A3BA6F600F921B3 /* PBXTargetDependency */,
+			);
+			name = verityTests;
+			productName = verityTests;
+			productReference = BCFCD6E82A3BA6F600F921B3 /* verityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +292,10 @@
 				TargetAttributes = {
 					BCFCD69B2A3BA34000F921B3 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					BCFCD6E72A3BA6F600F921B3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BCFCD69B2A3BA34000F921B3;
 					};
 				};
 			};
@@ -116,6 +313,7 @@
 			projectRoot = "";
 			targets = (
 				BCFCD69B2A3BA34000F921B3 /* verity */,
+				BCFCD6E72A3BA6F600F921B3 /* verityTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,7 +325,13 @@
 			files = (
 				BCFCD6AC2A3BA34900F921B3 /* LaunchScreen.storyboard in Resources */,
 				BCFCD6A92A3BA34900F921B3 /* Assets.xcassets in Resources */,
-				BCFCD6A72A3BA34100F921B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFCD6E62A3BA6F600F921B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +342,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCFCD6A42A3BA34100F921B3 /* ViewController.swift in Sources */,
 				BCFCD6A02A3BA34100F921B3 /* AppDelegate.swift in Sources */,
 				BCFCD6A22A3BA34100F921B3 /* SceneDelegate.swift in Sources */,
+				BCFCD6D02A3BA49900F921B3 /* BaseViewController.swift in Sources */,
+				BCFCD6D12A3BA49900F921B3 /* Extension.swift in Sources */,
+				BCFCD6E22A3BA4C200F921B3 /* APIMock.swift in Sources */,
+				BCFCD6D82A3BA4AF00F921B3 /* User.swift in Sources */,
+				BCFCD6C12A3BA45F00F921B3 /* UserDetailCardInformation.swift in Sources */,
+				BCFCD6CA2A3BA48000F921B3 /* UsersCollectionViewCell.swift in Sources */,
+				BCFCD6E32A3BA4C200F921B3 /* Service.swift in Sources */,
+				BCFCD6E12A3BA4C200F921B3 /* APIProtocol.swift in Sources */,
+				BCFCD6BB2A3BA44500F921B3 /* UserDetailViewModel.swift in Sources */,
+				BCFCD6C02A3BA45F00F921B3 /* RepoTableViewCell.swift in Sources */,
+				BCFCD6C62A3BA47300F921B3 /* UsersViewModel.swift in Sources */,
+				BCFCD6BA2A3BA44500F921B3 /* UserDetailViewController.swift in Sources */,
+				BCFCD6C72A3BA47300F921B3 /* UsersViewController.swift in Sources */,
+				BCFCD6D32A3BA49900F921B3 /* ErrorView.swift in Sources */,
+				BCFCD6D72A3BA4AF00F921B3 /* Repo.swift in Sources */,
+				BCFCD6D22A3BA49900F921B3 /* LoadingView.swift in Sources */,
+				BCFCD6DF2A3BA4C200F921B3 /* API.swift in Sources */,
+				BCFCD6C22A3BA45F00F921B3 /* UserDetailHeader.swift in Sources */,
+				BCFCD6E02A3BA4C200F921B3 /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFCD6E42A3BA6F600F921B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFCD6EB2A3BA6F600F921B3 /* verityAPITests.swift in Sources */,
+				BCFCD6F22A3BA76900F921B3 /* verityUserDetailViewModelTests.swift in Sources */,
+				BCFCD6F42A3BA79600F921B3 /* verityUsersModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		BCFCD6A52A3BA34100F921B3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCFCD6A62A3BA34100F921B3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		BCFCD6ED2A3BA6F600F921B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCFCD69B2A3BA34000F921B3 /* verity */;
+			targetProxy = BCFCD6EC2A3BA6F600F921B3 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		BCFCD6AA2A3BA34900F921B3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +523,6 @@
 				INFOPLIST_FILE = verity/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +549,6 @@
 				INFOPLIST_FILE = verity/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,6 +561,40 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCFCD6EF2A3BA6F600F921B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.thiagosoares.verityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/verity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/verity";
+			};
+			name = Debug;
+		};
+		BCFCD6F02A3BA6F600F921B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.thiagosoares.verityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/verity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/verity";
 			};
 			name = Release;
 		};
@@ -351,6 +615,15 @@
 			buildConfigurations = (
 				BCFCD6B12A3BA34900F921B3 /* Debug */,
 				BCFCD6B22A3BA34900F921B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCFCD6EE2A3BA6F600F921B3 /* Build configuration list for PBXNativeTarget "verityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFCD6EF2A3BA6F600F921B3 /* Debug */,
+				BCFCD6F02A3BA6F600F921B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
